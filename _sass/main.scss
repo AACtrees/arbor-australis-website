@@ -16,6 +16,7 @@
 
 .logo {
   max-width: 380px;
+  transition: max-width 0.2s ease;
 }
 @media (max-width: 1250px) {
   .logo {
@@ -33,20 +34,27 @@
 }
 
 .hero {
-  aspect-ratio: 1600 / 700;
+  aspect-ratio: 1600 / 500;
   object-fit: cover;
   margin-bottom: -2rem;
 }
 
 .footer-inner {
-  padding: 1rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
+.team-photos a {
+  cursor: pointer;
+}
 .team-photos img {
   width: 300px;
   height: 300px;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top;
+}
+
+.flat {
+  margin-bottom: 0;
 }
