@@ -1,0 +1,9 @@
+---
+permalink: /team/dia
+---
+
+## Dia Mae Luzares
+
+### CAD Drafter
+
+Dia has over 8 years of work experience in different fields of Architecture and Engineering. In her early working experience, she was part of a company which specialised in ice skating rinks. She was involved in the preparation of fabrication details, layout of plans, and visual presentation utilising her knowledge and skills in using design software such as AutoCad, Lumion, Google Sketchup, Vray and Photoshop. She was also a Landscape CAD Detailer for a company that specialised in landscape designing, urban design and land use planning. She was involved in the production of hardscape details, preparing material take-off, landscape design development and construction plans including lighting, furniture and drainage layout.

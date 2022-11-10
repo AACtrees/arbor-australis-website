@@ -16,8 +16,8 @@ When you engage Arbor Australis Consulting for your project, the delivery of ser
 
 - [Development Assessment](/services/development-assessment)
 - [Risk Assessment](/services/risk-assessment)
-- Management Plans 
-- Survey and Data Collection 
-- Expert Witness 
-- Project Arborist
+- [Management Plans](/services/management-plans) 
+- [Survey and Data Collection](/services/survey-and-data-collection) 
+- [Expert Witness](/services/expert-witness) 
+- [Project Arborist](services/project-arborist)
 
