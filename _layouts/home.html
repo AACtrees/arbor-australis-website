@@ -8,7 +8,9 @@
   </head>
   <body>
     {% include nav.html %}
-    <img src="./assets/images/hero.jpg" class="full-width hero">
+    <video autoplay loop muted class="full-width hero">
+      <source src="./assets/hero.mp4" type="video/mp4"></source>
+    </video>
     <main class="container-fluid">
       {{ content }}
     </main>
