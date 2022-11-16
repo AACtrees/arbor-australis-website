@@ -14,8 +14,8 @@ Arbor Australis Consulting frequently utilises technology such as GIS (Geographi
 
 When you engage Arbor Australis Consulting for your project, the delivery of services will be tailored to your project. Our team will deliver the required reporting in the agreed time frame and keep you informed throughout the project.
 
-- [Development Assessment](/services/development-assessment)
-- [Risk Assessment](/services/risk-assessment)
+- [Development Assessment](/services/development-assessment.html)
+- [Risk Assessment](/services/risk-assessment.html)
 - [Management Plans](/services/management-plans) 
 - [Survey and Data Collection](/services/survey-and-data-collection) 
 - [Expert Witness](/services/expert-witness) 
