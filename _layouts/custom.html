@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <script src="https://unpkg.com/htmx.org@1.8.2"></script>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     {% include nav.html %}
-    <main class="container">
+    <main class="container mx-auto">
       {{ content }}
     </main>
     {% include footer.html %}
