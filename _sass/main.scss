@@ -36,7 +36,7 @@
   opacity: 0;
   aspect-ratio: 1600 / 800;
   object-fit: cover;
-  animation: loadHero 2000ms 00ms ease forwards;
+  animation: reveal 2000ms 00ms ease forwards;
 }
 @media (min-width: 992px) { 
   .hero {
@@ -44,9 +44,17 @@
   }
 }
 
-@keyframes loadHero {
+@keyframes reveal {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes revealTeam {
+  0% {
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -60,6 +68,8 @@
 
 .team-photos a {
   cursor: pointer;
+  opacity: 0.4;
+  animation: revealTeam 200ms 0ms ease forwards;
 }
 .team-photos img {
   width: 300px;
