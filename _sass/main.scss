@@ -15,13 +15,13 @@
 }
 
 .logo {
-  width: 380px;
+  width: 400px;
 }
-@media (max-width: 1250px) {
-  .logo {
-    width: 320px;
-  }
-}
+// @media (max-width: 1250px) {
+//   .logo {
+//     width: 360px;
+//   }
+// }
 
 .full-width {
   width: 100vw;
@@ -33,8 +33,24 @@
 }
 
 .hero {
-  aspect-ratio: 1600 / 500;
+  opacity: 0;
+  aspect-ratio: 1600 / 800;
   object-fit: cover;
+  animation: loadHero 2000ms 00ms ease forwards;
+}
+@media (min-width: 992px) { 
+  .hero {
+    aspect-ratio: 1600 / 550;
+  }
+}
+
+@keyframes loadHero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .footer-inner {
