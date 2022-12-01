@@ -8,13 +8,51 @@
   </head>
   <body>
     {% include nav.html %}
-    <video autoplay loop muted class="full-width hero">
-      <source src="./assets/hero.mp4" type="video/mp4"></source>
-    </video>
+      <div>
+        <video id="hero-video"
+          class="full-width hero"
+          loop autoplay playsinline loop muted 
+          data-desktop-src="/assets/hero.mp4"
+          data-desktop-poster="/assets/hero-poster.jpg"
+          data-mobile-src="/assets/hero.mp4"
+          data-mobile-poster="/assets/hero-poster.jpg"
+        ></video>
+    </div>
+    <!-- <video autoplay loop muted class="full-width hero"> -->
+    <!--   <source src="./assets/hero.mp4" type="video/mp4"></source> -->
+    <!-- </video> -->
     <main class="pt-5">
       {{ content }}
     </main>
     {% include footer.html %}
+    <script>
+      /* define our wide breakpoint for the desktop video - this must match the CSS and preloads! */
+      const WIDE_VIEWPORT = 480;
+      /* define a match on the media query for us to share logic with CSS in JS */
+      const wideViewport = window.matchMedia(`(min-width: ${WIDE_VIEWPORT}px)`)
+
+      function resizeVideo(wideViewport) {
+        let videoEl = document.getElementById("hero-video");
+        // default to mobile video source and poster
+        let src = videoEl.dataset.mobileSrc;
+        let poster = videoEl.dataset.mobilePoster;
+        let widthDisplay = 'MOBILE';
+        if (wideViewport.matches) {
+          // override for desktop if the media query for a wide vieport matches
+          src = videoEl.dataset.desktopSrc;
+          poster = videoEl.dataset.desktopPoster;
+          widthDisplay = 'DESKTOP';
+        }
+        if (videoEl.src !== src) {
+          // only override values if they differ
+          videoEl.src = src;
+          videoEl.poster = poster;
+        }
+        //document.getElementById('width-display').textContent = widthDisplay;
+      }
+      wideViewport.addListener(resizeVideo)
+      resizeVideo(wideViewport)
+    </script>
   </body>
 </html>
 
