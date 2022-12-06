@@ -6,10 +6,12 @@
     <script src="https://unpkg.com/htmx.org@1.8.2"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="icon" href="/assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="site">
     {% include nav.html %}
-    <main class="container mx-auto px-4 md:px-1">
+    <main id="main" class="container mx-auto px-4 md:px-1">
       {{ content }}
     </main>
     {% include footer.html %}
