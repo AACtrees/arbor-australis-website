@@ -77,3 +77,9 @@
 .site a:hover img {
   opacity: 0.9;
 }
+
+img.fixed-image {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+}
